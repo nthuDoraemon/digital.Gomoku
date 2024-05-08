@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomoku Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Gomoku Game</h1>
+        </div>
+        <div class="game-info">
+            <div id="winner" class="winner"></div>
+        </div>
+        <div id="board" class="board"></div>
+            
+        <button id="button" onclick="newGame()">New Game</button>
+        <div class="game-info2">
+            <div id="currentPlayerContainer" class="currentPlayerContainer">
+                <span id="playerIcon"></span> 
+                <h2 id="currentPlayer"></h2>
+            </div>
+        </div>
+
+        <div id="timer-container">
+            <div id="timer-content">
+                <div id="timer-text">Time: 0s</div>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div id="stats" class="stats"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
